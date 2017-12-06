@@ -1,0 +1,31 @@
+@import "../node_modules/bootstrap/scss";
+
+$grey-text: #222;
+$white: #fff;
+$light-pink: #FABED6;
+$purple: #8A79C0;
+$deep-purple: #322640;
+$turq: #4E9AA5;
+$font-stack: 'mada', sans-serif;
+$font-size-small: 16px;
+$font-size-med: 24px;
+$font-size-big: 36px;
+
+body {
+  background-color: $white;
+  color: $deep-purple;
+  font-family: 100% $font-stack;
+}
+
+html{
+  @include  media-breakpoint-up(sm){ font-size: 16px; }
+  @include  media-breakpoint-up(md){ font-size: 24px; }
+  @include  media-breakpoint-up(lg){ font-size: 36px; }
+}
+
+.carousel-item{
+  @include media-breakpoint-up(sm){
+    width: 200px;
+    height: 100px;
+  }
+}

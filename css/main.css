@@ -1,0 +1,70 @@
+body{
+   font-family: 'Mada', sans-serif;
+}
+
+.container{
+  width: 100%;
+}
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    background-color: #fff;
+    border: 0;
+    color: #fff;
+    padding: 1% 0;
+    font-size: 1em;
+}
+
+.navbar-brand{
+    float: left;
+    min-height: 55px;
+    padding: 0 15px 15px;
+}
+
+.navbar-inverse .navbar-nav .active a, .nav-bar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+    color: #fff;
+}
+
+.navbar-inverse .navbar-nav li a{
+    color: #FBD0E7;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    height: auto;
+}
+
+.carousel-caption{
+    background-color: #322640;
+    opacity: 0.7;
+}
+
+.btn  {
+    font-size: 18px;
+    color: #fff;
+    padding: 12px 22px;
+    background-color: #8A79C0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+  }
+
+  @media (orientation: portrait) {
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+        display: block;
+        width:100%;
+        height:auto;
+    }
+}
+
+@media (orientation: landscape) {
+    .carousel-item.active,
+    .carousel-item-next,
+    .carousel-item-prev {
+        display: block;
+        width:100%;
+        height:96vh;
+    }
+}
