@@ -14,6 +14,7 @@ gulp.task('sass', function () {
   return gulp
     .src(sassPath)  // where to find the Sass source files
     .pipe(sass())           // forward those files to the compiler
+    .pipe(postcss(plugins))
     .pipe(gulp.dest('css')) // where to output the comipled CSS files
 })
 
