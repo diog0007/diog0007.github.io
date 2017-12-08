@@ -1,4 +1,4 @@
-@import "../node_modules/bootstrap/scss";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 $grey-text: #222;
 $white: #fff;
@@ -11,17 +11,28 @@ $font-size-small: 16px;
 $font-size-med: 24px;
 $font-size-big: 36px;
 
+// Media Queries
+$screen-sm-min: 768px;
+$screen-xs-max: ($screen-sm-min - 1);
+$screen-md-min: 992px;
+$screen-sm-max: ($screen-md-min - 1);
+$screen-lg-min: 1200px;
+$screen-md-max: ($screen-lg-min - 1);
+
 body {
   background-color: $white;
-  color: $deep-purple;
   font-family: 100% $font-stack;
 }
 
 html{
-  @include  media-breakpoint-up(sm){ font-size: 16px; }
-  @include  media-breakpoint-up(md){ font-size: 24px; }
-  @include  media-breakpoint-up(lg){ font-size: 36px; }
+  @media (max-width: $screen-xs-max) { $font-size-big; }
+  @media (min-width: $screen-sm-min) { $font-size-med; }
+  @media (max-width: $screen-sm-max) { $font-size-med; }
+  @media (min-width: $screen-md-min) { $font-size-med; }
+  @media (max-width: $screen-md-max) { $font-size-small; }
+  @media (min-width: $screen-lg-min) { $font-size-small; }
 }
+
 
 .carousel-item{
   @include media-breakpoint-up(sm){

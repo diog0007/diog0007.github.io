@@ -2,6 +2,12 @@ body{
    font-family: 'Mada', sans-serif;
 }
 
+h1, h2 {
+  margin-top: 10px;
+  padding: 1em;
+  font-size: 30px;
+}
+
 .container{
   width: 100%;
 }
@@ -51,7 +57,6 @@ body{
 
   .album {
     min-height: 50rem; /* Can be removed; just added for demo purposes */
-    padding-top: 3rem;
     padding-bottom: 3rem;
     background-color: #fff;
   }
@@ -94,6 +99,9 @@ body{
     .carousel-caption{
       display: none;
     }
+    .card-text{
+      display: none;
+    }
 }
 
 @media (orientation: landscape) {
@@ -102,6 +110,8 @@ body{
     .carousel-item-prev {
         display: block;
         width:100%;
-        height:96vh;
+        height:auto;
     }
 }
+
+
