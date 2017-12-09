@@ -24,7 +24,7 @@ body {
   font-family: 100% $font-stack;
 }
 
-html{
+html {
   @media (max-width: $screen-xs-max) { $font-size-big; }
   @media (min-width: $screen-sm-min) { $font-size-med; }
   @media (max-width: $screen-sm-max) { $font-size-med; }
