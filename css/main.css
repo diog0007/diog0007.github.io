@@ -1,6 +1,4 @@
-body{
-   font-family: 'Mada', sans-serif;
-}
+body{background-color:#fff;font-family:100%,mada,sans-serif}@media (max-width:767px){html{font-size:36px}}@media (min-width:768px){html{font-size:24px}}@media (max-width:991px){html{font-size:24px}}@media (min-width:992px){html{font-size:24px}}@media (max-width:1199px){html{font-size:16px}}@media (min-width:1200px){html{font-size:16px}}
 
 h1, h2 {
   margin-top: 10px;
@@ -226,5 +224,3 @@ a:hover, h3:hover{
         height:auto;
     }
 }
-
-
